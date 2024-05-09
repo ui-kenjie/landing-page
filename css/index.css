@@ -1,0 +1,17 @@
+.navbar-collapse {
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 70%;
+    background: #000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center !important;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255);
+}
