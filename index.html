@@ -6,9 +6,13 @@
     <!-- bootstrap -->
     <link href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <link href="plugins/fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="plugins/jquery-v3.4.1/jQuery.v3.4.1.js"></script>
     <!-- page css/js -->
     <link href="css/index.css" rel="stylesheet">
-    <script src="js/index.js"></script>
+    
 
     <title>KNJ Landing Page</title>
 </head>
@@ -18,7 +22,7 @@
   <div class="container-fluid bg-light">
       <nav class="navbar navbar-expand-lg justify-content-between navbar-light  container">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -36,11 +40,38 @@
 
 
 <section class="main-banner">
-  <div class="container">
-      test banner
+  <div class="container-fluid px-0">
+
+          <div class="container py-4 position-relative z-index-1">
+            <div class="row ">
+                  <div class="left col-md d-flex align-items-center py-3">
+                        <div class="">
+                              <p class="d-flex gap-3 social-icons">
+                                <a href="javescript:void(0)" class="text-white"><i class="fa-solid fa-user"></i></a>
+                                <a href="javescript:void(0)" class="text-white"><i class="fa-solid fa-user"></i></a>
+                                <a href="javescript:void(0)" class="text-white"><i class="fa-solid fa-user"></i></a>
+                                <a href="javescript:void(0)" class="text-white"><i class="fa-solid fa-user"></i></a>
+                              </p>
+                              <h1 class="text-white">Lorem ipsum dolor sit amet</h1>
+                              <p class="text-white">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                              <div class="d-flex gap-2">
+                                <button class="btn btn-success default-btn px-5 text-white">Lorem</button>
+                                <button class="btn btn-outline-success default-btn px-5 text-white">Ipsum</button>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="right col-md d-flex align-items-center py-3">
+                        <div>
+                              <img src="images/banner-img.jpg" alt="" class="w-100">
+                        </div>
+                  </div>
+            </div>
+          </div>
+
   </div>
 </section>
     
     
 </body>
+<script src="js/index.js"></script>
 </html>

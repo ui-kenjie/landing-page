@@ -1,0 +1,48 @@
+.try_svg > path {
+    opacity: 0;
+}
+.try_svg > path.showPath {
+    opacity: 1;
+}
+
+
+
+/* Main banner */
+.main-banner > div {
+    background: url(../images/banner-img.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;
+    display: grid;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.main-banner > div:before,
+.main-banner > div:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    filter: blur(10px);
+    background: inherit;
+}
+.main-banner > div:after {
+    background: #0000008c;
+    z-index: 0;
+}
+.z-index-1 {
+    z-index: 9;
+}
+.social-icons > a {
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
