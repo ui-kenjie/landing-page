@@ -4,15 +4,19 @@
 .try_svg > path.showPath {
     opacity: 1;
 }
-
-
+body {
+    background-color: #F8F8F8;
+}
+a {
+    text-decoration: none;
+}
 
 /* Main banner */
 .main-banner > div {
     background: url(../images/banner-img.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 70vh;
+    min-height: 85vh;
     display: grid;
     align-items: center;
     position: relative;
@@ -45,4 +49,50 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+}
+
+/* SERVICES */
+.service-block img {
+    filter: invert(1);
+    width: 60px;
+}
+.service-block > div:has(img) {
+    background-color: #0779E4;
+    padding: 20px;
+    width: fit-content;
+}
+
+/* COUNTER */
+.section-counter > div {
+    background: url(../images/banner-img.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+.section-counter > div:before,
+.section-counter > div:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    filter: blur(5px);
+    background: inherit;
+}
+.section-counter > div:after {
+    background: #0779e4a8;
+    z-index: 0;
+}
+.count-icon-left {
+    font-size: 55px;
+}
+
+@media screen and (min-width: 1200px) {
+    /* ABOUT US SECTION */
+    .about-us {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
