@@ -4,15 +4,22 @@
 .try_svg > path.showPath {
     opacity: 1;
 }
-
-
+body {
+    background-color: #F8F8F8;
+}
+a {
+    text-decoration: none;
+}
+.modal-backdrop.show {
+    opacity: .85;
+}
 
 /* Main banner */
 .main-banner > div {
     background: url(../images/banner-img.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 70vh;
+    min-height: 85vh;
     display: grid;
     align-items: center;
     position: relative;
@@ -45,4 +52,113 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+}
+
+/* SERVICES */
+.service-block img {
+    filter: invert(1);
+    width: 60px;
+}
+.service-block > div:has(img) {
+    background-color: #0779E4;
+    padding: 20px;
+    width: fit-content;
+}
+
+/* COUNTER */
+.section-counter > div {
+    background: url(../images/banner-img.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+.section-counter > div:before,
+.section-counter > div:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    filter: blur(5px);
+    background: inherit;
+}
+.section-counter > div:after {
+    background: #0779e4a8;
+    z-index: 0;
+}
+.count-icon-left {
+    font-size: 55px;
+}
+
+.gallery .modal-list  img {
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 5px solid #1110;
+    box-shadow: 0 0 10px #ccc;
+    width: 100%;
+}
+
+.gallery .modal-list > div {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.gallery .modal-list > div:before {
+    content: '\f00e';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: #fff;
+    font-size: 32px;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+}
+.gallery .modal-list > div:after {
+    content: '';
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000c9;
+    z-index: 1;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+}
+.gallery .modal-list > div:hover:before,
+.gallery .modal-list > div:hover:after {
+    opacity: 1;
+}
+.gallery .modal-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .gallery .modal-list > div  {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* ABOUT US SECTION */
+    .about-us {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .gallery .modal-list > div  {
+        width: 23%;
+    }
 }
