@@ -16,7 +16,7 @@ a {
 
 /* Main banner */
 .main-banner > div {
-    background: url(../images/banner-img.jpg) center no-repeat;
+    background: url(../images/image3.jpeg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 85vh;
@@ -52,6 +52,11 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    transition: 0.2s all ease-in-out;
+}
+.social-icons > a:hover {
+    background: #ffffffe3;
+    color: #111 !important;
 }
 
 /* SERVICES */
