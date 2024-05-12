@@ -153,6 +153,13 @@
                   </div>
             </div>
         </div>
+
+        <div class="text-center mt-5 mb-5">
+          <strong class="d-block text-secondary">Have any works you want to done by me? <a href="#">Contact Me</a></strong>
+
+          Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam.
+        </div>
+
   </div>
 </section>
 
@@ -161,7 +168,7 @@
       <div class="container position-relative z-index-1">
         <div class="row w-75 mx-auto my-5">
           <div class="col-md">
-                <div class="d-flex justify-content-center gap-4 align-items-center text-white">
+                <div class="d-flex justify-content-center gap-4 align-items-center text-white mb-4 mb-md-5">
                     <i class="count-icon-left fa-regular fa-face-smile-beam"></i>
                     <div>
                         <h3>3,000</h3>
@@ -170,7 +177,7 @@
                 </div>
           </div>
           <div class="col-md">
-                <div class="d-flex justify-content-center gap-4 align-items-center text-white">
+                <div class="d-flex justify-content-center gap-4 align-items-center text-white mb-4 mb-md-5">
                     <i class="count-icon-left fa-solid fa-folder-open"></i>
                     <div>
                         <h3>520</h3>
@@ -179,7 +186,7 @@
                 </div>
           </div>
           <div class="col-md">
-                <div class="d-flex justify-content-center gap-4 align-items-center text-white">
+                <div class="d-flex justify-content-center gap-4 align-items-center text-white mb-4 mb-md-5">
                   <i class="count-icon-left fa-solid fa-mug-hot"></i> 
                   <div>
                       <h3>1025</h3>
@@ -192,6 +199,52 @@
     </div>
 </section>
 
+<section class="my-services pt-5">
+  <div class="container pt-5 mt-5">
+        <div class="titles text-center">
+          <h5 class="text-primary">My Portfolio</h5>
+          <h2>My Latest Work</h2>
+        </div>
+        
+        <div class="gallery mt-5">
+            <div class="modal-list">
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g1.png" alt="" class=" " data-img="g1.png"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g2.png" alt="" class=" " data-img="g2.png"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g3.png" alt="" class=" " data-img="g3.png"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g4.png" alt="" class=" " data-img="g4.png"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g5.png" alt="" class=" " data-img="g5.png"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g6.jpg" alt="" class=" " data-img="g6.jpg"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g7.png" alt="" class=" " data-img="g7.png"></div>
+                <div data-bs-toggle="modal" data-bs-target="#modal-gallery"><img src="images/g8.jpg" alt="" class=" " data-img="g8.jpg"></div>
+            </div>
+        </div>
+        
+
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-gallery" tabindex="-1" aria-labelledby="modal-galleryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content p-0">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+          <img src="images/g1.png" alt="" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 <script src="js/index.js"></script>
+<script>
+  $('.gallery .modal-list > div').click(function() {
+    var imge = $(this).children('img').attr('data-img');
+
+    $('div#modal-gallery .modal-body ').children().remove();
+    $('div#modal-gallery .modal-body ').append('<img src="images/' +imge+ '" alt="" class="w-100">')
+  })
+</script>
 </html>
